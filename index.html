@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DIPLOMA CLOUD COMPUTING</title>
+  
+  <link rel="icon" type="png" href="cloud.png">
+  
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+   #scrollToTopBtn {
+      display: none; /* Hide button by default */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      background-color: #02CCFE;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #000000;
+      color: #02CCFE;
+    }
+  </style>
+<body>
+
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+    <i class="ti-angle-up"></i>
+  </button>
+</body>
+
+</script>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+
+  function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+</script>
+
+  
+  
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="callto:+601163293670"><strong>CALL</strong> +60 11-6329 3670</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.facebook.com/profile.php?id=100057302896445&mibextid=ZbWKwL"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="ti-music p-2 text-color" href="https://www.tiktok.com/@dfk_ikmbesut357?_t=8leUDGJHCGP&_r=1"><i class="ti-tiktok"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register&nbsp; now!!</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+             <li class="nav-item @@Program Overview">
+         <a class="nav-link" href="index.html" >Program Overview</a>
+      </li>
+        <li class="nav-item @@Department">
+              <a class="nav-link" href="Department.html" >Department</a>
+            </li>
+            <li class="nav-item @@Qualifications">
+              <a class="nav-link" href="Qualifications.html" >Qualifications</a>
+            </li>
+            <li class="nav-item @@Galleries">
+        <a class="nav-link" href="Galleries.html"  >Galleries</a>
+            </li>
+        <li class="nav-item @@Apply">
+              <a class="nav-link" href="Apply.html"   >Apply</a>
+           </li>
+        <li class="nav-item @@Contact">
+              <a class="nav-link" href="Contact.html"   >Contact</a>
+            </li>
+
+
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="banner-1.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Welcome to Cloud Computing Course</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4"> People who take this class will learn a lot about cloud computing, which is one of the newest and fastest-growing areas of technology.</p>
+            <a href="Apply.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Build your career here with us</p>
+            <a href="Apply.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Join Incubator With Us</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">providing every student with an entrepreneurial mindset</p>
+            <a href="Apply.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /hero slider -->
+
+<!-- banner-feature -->
+<section class="bg-gray">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-xl-4 col-lg-5 align-self-end">
+        <img class="img-fluid w-100" src="banner-feature.png" alt="banner-feature">
+      </div>
+      <div class="col-xl-8 col-lg-7">
+        <div class="row feature-blocks bg-gray justify-content-between">
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">OPPORTUNITY TO CONTINUE EDUCATION</h3>
+<p class="text-left">&nbsp;1. Degree in Engineering Technology (Honours) Network Systems (MIIT)</p>
+<p class="text-left">2. Computer Science Degree with Honour (Network Computers) (UTeM)</p>
+            <p class="text-justify">3. Computer Science Degree with Honours (Data Management )</p>
+            <p class="text-left">4. Computer Science Degree (Honours) Cloud Computing (INTI)</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Prospect of work</h3>
+            <p class="text-justify">Management, Network Systems, Network Fiber Optics, Entrepreneurs</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Study period</h3>
+            <p class="text-justify">full-time 36 months 6 semesters 1 semester 6 months at a fee of 300 a month.</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Register Now</h3>
+            <p class="text-justify"> Intake Student&nbsp;two sessions every year when students can apply to enrol. Sessions from January to June and July to Decembe.r&nbsp;&nbsp;</p>
+            <p>&nbsp;</p>
+<p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner-feature -->
+
+<!-- about us -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">Synopsys Program</h2>
+<p class="text-justify">The program's ultimate goal is to produce graduates who are well-versed in cloud computing. (Online System Hosting). In keeping with the progress of the Industry 4.0 revolution, this sector is one that offers job prospects and is in great demand from businesses. Students will gain practical experience in cloud computing administration and gain exposure to a range of concepts in fibre optics and network computer systems, including virtualization, disaster recovery, and security. </p>
+		  <a href="Apply.html" class="btn btn-primary-outline">Apply Now</a>
+
+
+
+</div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="cloud-2.jpg" alt="cloud-2">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="row no-gutters">
+  <div class="col-xl-4 col-lg-5 align-self-end"> <img class="img-fluid w-100" src="cloud-1.png" alt="cloud"> </div>
+  <div class="col-xl-8 col-lg-7">
+<div class="row feature-blocks bg-gray justify-content-between">
+      <div class="col-sm-6 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left col-xl-12">
+<h3 class="mb-xl-4 mb-lg-3 mb-4">CONTENTS OF THE SYLLABUS</h3>
+<p class="text-justify">Semester 1 : Computer Fundamentals, Electronics Fundamentals, Database Fundamentals, Engineering Mathematics 1, Technical Mathematics 1, Entrepreneurship 1, English &amp; Communication 1, Islamic Perspective, Ethical Theory &amp; Moral Practice, Co-Curriculum 1, Fundamental Web Programming, Digital Systems, Fundamentals of Fiber Optics, Fundamentals of Networking, Engineering Mathematics 2, English and Communication 2, Co-Curriculum 2&nbsp;</p>
+        <p class="text-justify">Semester 2 : Data Communication and Networking, Fiber Optic Mediation, Emerging IT Technologies, Windows Server Administration, Linux Server Administration, Engineering Mathematics 3, ​ Contemporary Islam, Moral Problems &amp; Issues, Cloud Computing 1, Cloud Security, Virtualization I, Project Proposal, Start-up Enterprise, Malaysian Studies</p>
+        <p class="text-justify">&nbsp;Semester 3 : Cloud Computing 2, Disaster Recovery and Business Continuity Plan, Virtual Technology II, Final Year Project, Digital Enterprise, Industrial Training</p>
+		  <a href="Apply.html" class="btn btn-primary-outline">Apply Now</a>
+      
+  </div>
+	
+  <!-- Preloader -->
+  <div id="preloader"></div>
+</div>
+  </div>
+</div>
+<!-- /about us -->
+
+<!-- courses --><!-- /courses -->
+
+<!-- cta --><!-- /cta -->
+
+<!-- success story --><!-- /success story -->
+
+<!-- events --><!-- /events -->
+
+<!-- teachers --><!-- /teachers -->
+
+<!-- blog --><!-- /blog -->
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <!-- footer content -->
+  <div class="bg-footer">
+<div class="container">
+<div class="row">
+  <div class="col-xl-5 offset-xl-0">
+    <!-- logo -->
+    <a class="logo-footer" href="index.html"></a>
+    <ul class="list-unstyled">
+      <img class="img-fluid mb-4" src="logo.png" alt="logo">
+      <li class="mb-2">Institut Kemahiran MARA, Jalan Batu Tumboh Alor Lintang, Kampung Gong Badang, 22200 Besut, Terengganu</li>
+    </ul>
+  </div>
+<!-- company -->
+        
+        <!-- links -->
+        
+        <!-- support -->
+        
+        <!-- support -->
+      </div>
+    </div>
+  </div>
+	</footer>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+
+            © Theme By <a href="https://www.tvetmara.edu.my/index.php/component/splms/course/f67-diploma-komputasiawan">dfkikmbesut.com</a></p> . All Rights Reserved.
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/profile.php?id=100057302896445&mibextid=ZbWKwL"><i class="ti-facebook text-primary"></i></a></li>
+           <li class="list-inline-item mx-0"><a class="ti-music text-primary" href="https://www.tiktok.com/@dfk_ikmbesut357?_t=8leUDGJHCGP&_r=1"><i class="ti-tiktok text-primary"></i></a></li>
+          
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+	
+
+
+</body>
+</html>
